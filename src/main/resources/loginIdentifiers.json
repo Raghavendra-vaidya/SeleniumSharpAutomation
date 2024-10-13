@@ -1,0 +1,5 @@
+{
+  "headerCss": "h5[class *= 'login-title']",
+  "usernameLabelXpath": "//label[text()='Username']",
+  "passwordLabelXpath": "//label[text()='Username']"
+}
