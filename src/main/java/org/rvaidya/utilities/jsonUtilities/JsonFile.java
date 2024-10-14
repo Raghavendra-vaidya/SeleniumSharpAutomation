@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 public class JsonFile {
 
-    public synchronized JsonObject getJsonFileObject(String filePath) {
+    public static synchronized JsonObject getJsonFileObject(String filePath) {
         JsonObject data = null;
         Path path = Paths.get(filePath);
         try {
@@ -25,7 +25,7 @@ public class JsonFile {
         return data;
     }
 
-    public synchronized JsonArray getJsonFileArray(String filePath) {
+    public static synchronized JsonArray getJsonFileArray(String filePath) {
         JsonArray data = null;
         Path path = Paths.get(filePath);
         try {
@@ -37,6 +37,5 @@ public class JsonFile {
         }
         return data;
     }
-    
 
 }
