@@ -1,5 +1,9 @@
 {
   "headerCss": "h5[class *= 'login-title']",
   "usernameLabelXpath": "//label[text()='Username']",
-  "passwordLabelXpath": "//label[text()='Username']"
+  "passwordLabelXpath": "//label[text()='Password']",
+  "usernameFieldXpath": "//input[@name='username']",
+  "passwordFieldXpath": "//input[@type='password' and @name='password']",
+  "loginButtonXpath": "//button[contains(@class, 'login-button')]",
+  "forgotPasswordLinkXpath": "//div/p[contains(@class,'forgot')]"
 }
