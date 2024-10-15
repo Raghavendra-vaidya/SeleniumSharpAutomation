@@ -4,6 +4,7 @@ import org.apache.poi.ss.usermodel.*;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 
 public class ExcelFile {
     public static synchronized Workbook loadFileAndGetWorkbook(String filePath) {
@@ -61,4 +62,15 @@ public class ExcelFile {
         }
         return data;
     }
+    public synchronized static ArrayList<String> getAllCellDataFromRow(String filePath, String sheetName, int rIndex {
+        ArrayList<String> data = null;
+        try {
+            Row row = getEntireRowFromSheet(filePath,sheetName,rIndex);
+            row.forEach(cell -> data.add(new DataFormatter().formatCellValue(cell)) );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
 }
