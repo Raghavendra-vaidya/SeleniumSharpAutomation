@@ -51,7 +51,7 @@ public class ExcelFile {
         }
         return requiredCell;
     }
-    
+
     public synchronized static String getDataFromCell(String filePath, String sheetName, int rIndex, int cIndex) {
         String data = null;
         try {
@@ -62,11 +62,12 @@ public class ExcelFile {
         }
         return data;
     }
-    public synchronized static ArrayList<String> getAllCellDataFromRow(String filePath, String sheetName, int rIndex {
+
+    public synchronized static ArrayList<String> getAllCellDataFromRow(String filePath, String sheetName, int rIndex) {
         ArrayList<String> data = null;
         try {
-            Row row = getEntireRowFromSheet(filePath,sheetName,rIndex);
-            row.forEach(cell -> data.add(new DataFormatter().formatCellValue(cell)) );
+            Row row = getEntireRowFromSheet(filePath, sheetName, rIndex);
+            row.forEach(cell -> data.add(new DataFormatter().formatCellValue(cell)));
         } catch (Exception e) {
             e.printStackTrace();
         }
