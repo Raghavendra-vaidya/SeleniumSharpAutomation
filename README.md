@@ -13,6 +13,7 @@ Automate orangeHRM using Java Selenium 4
 5. [GSON](https://github.com/google/gson)
 6. [Apache POI](https://poi.apache.org/)
 7. [DataFaker](https://www.datafaker.net/documentation/getting-started/)
+8. [log4j](https://logging.apache.org/log4j/2.x/index.html)
 
 ---
 
