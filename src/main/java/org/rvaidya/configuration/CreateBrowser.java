@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.rvaidya.utilities.GetData;
+import org.rvaidya.utilities.ConfigLoader;
 
 import java.time.Duration;
 
@@ -12,9 +12,10 @@ public class CreateBrowser {
 
 
     public static WebDriver driver;
+    static ConfigLoader config = new ConfigLoader();
 
-    static String webUrl = GetData.fromPropertiesFile("src/main/resources/projectConfig.properties", "URL");
-    static String implicitWaitTime = GetData.fromPropertiesFile("src/main/resources/projectConfig.properties", "implicitWaitTime");
+    static String webUrl = config.getAppUrl();
+    static String implicitWaitTime = config.getImplicitWaitTimeOut();
     static Integer implicitWait = Integer.valueOf(implicitWaitTime);
 
     public synchronized static WebDriver instance(String browser) {
