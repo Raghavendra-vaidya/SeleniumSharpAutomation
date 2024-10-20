@@ -10,11 +10,17 @@ public class ConfigLoader {
 
     private String explicitWaitTimeOut;
 
+    private String reportFolderName;
+
+    private String reportName;
+
     public ConfigLoader() {
         Properties projectProperties = PropertiesUtils.getPropertiesFileInstance("src/main/resources/projectConfig.properties");
         this.appUrl = projectProperties.getProperty("URL");
         this.explicitWaitTimeOut = projectProperties.getProperty("explicitWaitTime");
         this.implicitWaitTimeOut = projectProperties.getProperty("implicitWaitTime");
+        this.reportFolderName = projectProperties.getProperty("reportFolderName");
+        this.reportName = projectProperties.getProperty("reportName");
     }
 
     public String getAppUrl() {
@@ -27,5 +33,13 @@ public class ConfigLoader {
 
     public String getExplicitWaitTimeOut() {
         return explicitWaitTimeOut;
+    }
+
+    public String getReportFolderName() {
+        return reportFolderName;
+    }
+
+    public String getReportName() {
+        return reportFolderName;
     }
 }
