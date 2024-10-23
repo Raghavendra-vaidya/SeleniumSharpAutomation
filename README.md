@@ -34,32 +34,32 @@ Automate orangeHRM using Java Selenium 4
 
 **Pre-requisites**:
 
-1. Java 17
-2. Chrome and firefox on the system
-3. Intellij
+1. Java 17.
+2. Chrome and firefox on the system.
+3. Intellij.
 
 **Steps**:
 
-1. clone this repo
-2. import as a project by selecting pom.xml
-3. run ``` mvn clean install -DskipTests``` to install dependencies
-4. run mvn ```mvn -q clean test``` to run tests
+1. clone this repo.
+2. import as a project by selecting pom.xml.
+3. run ``` mvn clean install -DskipTests``` to install dependencies.
+4. run mvn ```mvn -q clean test``` to run tests.
 
 ---
 
-### Automation topics covered:
+### Automation topics covered[WIP]:
 
 ---
 
-### Reports:
+### Reports[WIP]:
 
 ---
 
-### CI/CD:
+### CI/CD[WIP]:
 
 ---
 
-### Detailed documentation
+### Detailed documentation[WIP]
 
 1. The flow
 2. Reports segregation
