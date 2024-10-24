@@ -1,0 +1,24 @@
+name: Run tests in GH Actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: selenium/standalone-chrome:latest
+      options: --user root  # Run as root user to avoid permission issues
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Java 17 and Maven
+        run: |
+          apt-get update && \
+          apt-get install -y openjdk-17-jdk maven && \
+          apt-get clean
+
+      - name: validate maven project
+        run: mvn validate
