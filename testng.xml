@@ -7,6 +7,7 @@
     <test verbose="2" preserve-order="true" name="LoginTest" parallel="classes">
         <classes>
             <class name="org.rvaidya.LoginTest.LoginTest"></class>
+            <class name="org.rvaidya.DashboardTest.DashboardTest"></class>
         </classes>
     </test>
 </suite>

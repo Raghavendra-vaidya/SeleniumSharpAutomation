@@ -20,11 +20,14 @@ public class CreateBrowser {
     public synchronized static WebDriver instance(String browser) {
         if (browser.equalsIgnoreCase("Chrome")) {
             ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setAcceptInsecureCerts(true);
+            chromeOptions.setScriptTimeout(Duration.ofSeconds(5));
             chromeOptions.addArguments("--headless=new");
             driver = new ChromeDriver(chromeOptions);
 
         } else if (browser.equalsIgnoreCase("firefox")) {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
+            firefoxOptions.setScriptTimeout(Duration.ofSeconds(5));
             firefoxOptions.addArguments("--headless");
         }
         driver.manage().window().maximize();

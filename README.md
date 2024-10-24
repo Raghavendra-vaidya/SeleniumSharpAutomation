@@ -51,17 +51,26 @@ Automate orangeHRM using Java Selenium 4
 
 ---
 
-### Reports[WIP]:
+### Reports:
 
+Extent:
+![img.png](extentReport.png)
+
+---
+
+testNg:
+![img_1.png](testNgReport.png)
+
+
+---
+
+### Logs:
+
+![img_2.png](log4jLog.png)
 ---
 
 ### CI/CD[WIP]:
 
 ---
 
-### Detailed documentation[WIP]
-
-1. The flow
-2. Reports segregation
-3. Utilities
 

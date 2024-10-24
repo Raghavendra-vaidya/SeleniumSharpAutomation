@@ -1,0 +1,5 @@
+{
+  "upgradeButtonXpath": "//button[text()=' Upgrade']",
+  "userProfileDropdownXpath": "//span[contains(@class,'userdropdown-tab')]",
+  "logoutLink": "Logout"
+}

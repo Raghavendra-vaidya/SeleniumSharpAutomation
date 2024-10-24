@@ -21,7 +21,7 @@ public class ExtentReportManager {
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(path);
         sparkReporter.config().setEncoding("utf-8");
         sparkReporter.config().setDocumentTitle("Automation Reports");
-        sparkReporter.config().setReportName("Public API Test Results");
+        sparkReporter.config().setReportName("OrangeHRM Demo Test Results");
         sparkReporter.config().setTheme(Theme.STANDARD);
         sparkReporter.config().setTimelineEnabled(false);
         sparkReporter.viewConfigurer()
@@ -35,9 +35,10 @@ public class ExtentReportManager {
                 .apply();
 
         extent = new ExtentReports();
-        extent.setSystemInfo("Organization", "rkv");
-        extent.setSystemInfo("Scope", "UI Tests");
-        // extent.setSystemInfo("Image", "maven:3.8-jdk-17-slim");
+        extent.setSystemInfo("Organization", "rvaidya");
+        extent.setSystemInfo("Scope", "OrangeHRM UI Tests");
+        extent.setSystemInfo("Docker Image: Chrome", "selenium/standalone-chromium");
+        extent.setSystemInfo("Docker Image: Chrome", "selenium/standalone-firefox");
         extent.attachReporter(sparkReporter);
         return extent;
     }
