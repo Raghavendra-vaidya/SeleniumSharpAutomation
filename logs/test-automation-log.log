@@ -1,0 +1,6 @@
+2024-10-24 21:19:10 [main] INFO  org.rvaidya.utilities.TestRunListener - Starting Test Execution: LoginTest
+2024-10-24 21:19:16 [TestNG-test-LoginTest-1] INFO  org.rvaidya.utilities.TestRunListener - Test Started : testPageTitle
+2024-10-24 21:19:16 [TestNG-test-LoginTest-1] INFO  org.rvaidya.utilities.TestRunListener - Test Passed : testPageTitle
+2024-10-24 21:19:21 [TestNG-test-LoginTest-1] INFO  org.rvaidya.utilities.TestRunListener - Test Started : testUsernameFieldIsDisplayed
+2024-10-24 21:19:21 [TestNG-test-LoginTest-1] INFO  org.rvaidya.utilities.TestRunListener - Test Passed : testUsernameFieldIsDisplayed
+2024-10-24 21:19:21 [main] INFO  org.rvaidya.utilities.TestRunListener - Finished Test Execution: LoginTest
