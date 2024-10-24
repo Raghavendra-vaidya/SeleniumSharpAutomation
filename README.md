@@ -69,7 +69,16 @@ testNg:
 ![img_2.png](log4jLog.png)
 ---
 
-### CI/CD[WIP]:
+### CI/CD:
+![{10C6B68C-F416-44BB-B4E9-5641ADD8E8B3}](https://github.com/user-attachments/assets/8b9c9e02-13cf-4c05-a97b-873fc8094e54)
+
+---
+
+![{8B8AA759-8CA4-49FC-985D-FC5C9EDCD420}](https://github.com/user-attachments/assets/2be10cb5-9989-410d-9c83-e556dba429d1)
+
+---
+
+#### artifacts:
 
 ---
 
