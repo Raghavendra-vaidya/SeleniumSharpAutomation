@@ -4,7 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.aventstack.extentreports.reporter.configuration.ViewName;
-import org.rvaidya.utilities.ConfigLoader;
+import org.rvaidya.configuration.ConfigLoader;
 
 import java.io.File;
 

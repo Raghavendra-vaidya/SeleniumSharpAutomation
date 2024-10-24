@@ -1,4 +1,6 @@
-package org.rvaidya.utilities;
+package org.rvaidya.configuration;
+
+import org.rvaidya.utilities.PropertiesUtils;
 
 import java.util.Properties;
 
@@ -40,6 +42,6 @@ public class ConfigLoader {
     }
 
     public String getReportName() {
-        return reportFolderName;
+        return reportName;
     }
 }
