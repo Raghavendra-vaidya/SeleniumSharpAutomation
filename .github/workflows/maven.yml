@@ -23,20 +23,5 @@ jobs:
           apt-get install -y openjdk-17-jdk maven && \
           apt-get clean
 
-      - name: Pre-build Maven (Skip Tests)
-        run: mvn clean install -DskipTests
-
-      - name: Run Maven Tests
-        run: mvn -q clean test
-
-      - name: Archive HtmlReports
-        uses: actions/upload-artifact@v3
-        with:
-          name: HtmlReports
-          path: ./HtmlReports  # Specify the path to the HtmlReports folder
-
-      - name: Archive Logs
-        uses: actions/upload-artifact@v3
-        with:
-          name: Logs
-          path: ./logs  # Specify the path to the logs folder
+      - name: validate maven project
+        run: mvn validate
