@@ -1,6 +1,6 @@
 # SeleniumSharpAutomation :computer:
 
-Automate orangeHRM using Java Selenium 4
+Automate orangeHRM using Selenium 4
 
 ---
 
