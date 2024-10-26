@@ -40,10 +40,10 @@ Automate orangeHRM using Selenium 4
 
 **Steps**:
 
-1. clone this repo.
-2. import as a project by selecting pom.xml.
-3. run ``` mvn clean install -DskipTests``` to install dependencies.
-4. run mvn ```mvn -q clean test``` to run tests.
+1. Clone this repo.
+2. Import as a project by selecting pom.xml.
+3. Run ``` mvn clean install -DskipTests``` to install dependencies.
+4. Run mvn ```mvn -q clean test``` to run tests.
 
 ---
 
@@ -58,7 +58,7 @@ Extent:
 
 ---
 
-testNg:
+TestNg:
 ![img_1.png](testNgReport.png)
 
 
@@ -78,7 +78,7 @@ testNg:
 
 ---
 
-#### artifacts:
+#### Artifacts:
 
 ---
 
