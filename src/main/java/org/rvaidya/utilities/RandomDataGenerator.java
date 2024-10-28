@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public class RandomDataGenerator {
 
-    public synchronized static String getMaleName() {
+    public synchronized String getMaleName() {
         Supplier<String> supplier = () -> {
 
             String randomString = RandomStringUtils.random(6, true, true);
@@ -17,7 +17,7 @@ public class RandomDataGenerator {
         return supplier.get();
     }
 
-    public synchronized static String getFemaleName() {
+    public synchronized String getFemaleName() {
         Supplier<String> supplier = () -> {
 
             String randomString = RandomStringUtils.random(6, true, true);
@@ -27,7 +27,7 @@ public class RandomDataGenerator {
         return supplier.get();
     }
 
-    public synchronized static String getAnimalName() {
+    public synchronized String getAnimalName() {
         Supplier<String> supplier = () -> {
 
             String randomString = RandomStringUtils.random(6, true, true);
