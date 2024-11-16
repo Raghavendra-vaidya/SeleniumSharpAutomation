@@ -1,6 +1,9 @@
 # SeleniumSharpAutomation :computer:
 
-Automate orangeHRM using Selenium 4
+Test automation frameWork using selenium WebDriver 4, java, testNG.
+Demonstration of a common framework to automate multiple sites:
+1. orangeHRM
+2. SwagLabs
 
 ---
 
